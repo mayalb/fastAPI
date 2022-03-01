@@ -1,0 +1,1089 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#"
+     xml:base="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#hasAnnotation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#hasAnnotation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Spectacle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Annotation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#hasDecor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#hasDecor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Annotation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Decor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#hasEmotion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#hasEmotion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Annotation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Emotion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#hasEvocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#hasEvocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Annotation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Evocation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#hasInterpretation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#hasInterpretation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Annotation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Interpretation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#hasJudgement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#hasJudgement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Annotation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Judgement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#hasWayToFeel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#hasWayToFeel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Perception"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Way"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#TextComprehension -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#TextComprehension">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Comprehension"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#TextCriticalOpinion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#TextCriticalOpinion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#AestheticCriticalOpinion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#TextCulturalReference -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#TextCulturalReference">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#CulturalReference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#TextInterpretation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#TextInterpretation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#interpretation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Annotation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#projectId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#projectId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Annotation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#startTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#startTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Annotation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#stopTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#stopTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Annotation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#userId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#userId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Annotation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#AestheticCriticalOpinion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#AestheticCriticalOpinion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Judgement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Agitation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Agitation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#PhysicalSensation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Annotation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Annotation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Calm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Calm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#PhysicalSensation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Comprehension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Comprehension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Evocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#CulturalReference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#CulturalReference">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Evocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Decor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Decor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Dislike -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Dislike">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#SubjectiveOpinion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Embarassment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Embarassment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#PhysicalSensation"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Pleasure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Emotion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Emotion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Empathy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Empathy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Compassion"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Kidness"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Shame"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Sympathy"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Tenderness"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Feeling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Evocation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Evocation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Excitation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Excitation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#PhysicalSensation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Execptedness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Execptedness">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Curiousity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Expectant"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Hope"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Impatience"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Feeling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Fear -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Fear">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Apprehension"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Dread"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Horror"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Scare"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Feeling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Feeling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Feeling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Emotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Happiness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Happiness">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Fascination"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Hilarity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Laugh"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Relief"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Smile"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Feeling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Hesitation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Hesitation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Doubt"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Exceeding"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Upheaval"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Vertigo"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Worry"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Feeling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Interpretation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Interpretation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Involvement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Involvement">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Embedded"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#IamAttentive"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iAmTired"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iAnticipate"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iHaveTroublesGettingInto"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iUnhook"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Emotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Judgement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Judgement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Like -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Like">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#SubjectiveOpinion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Perception -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Perception">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#PhysicalSensation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#PhysicalSensation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#PhysicalSensation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Emotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Pleasure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Pleasure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#PhysicalSensation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Sadness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Sadness">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Anguish"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Disappointment"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Frustration"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Melancholy"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Pain"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Pity"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Feeling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Spectacle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Spectacle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#SubjectiveOpinion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#SubjectiveOpinion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Judgement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Surprise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Surprise">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Astonishment"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Bewilderment"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Seizure"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Stupefaction"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Feeling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Way -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Way">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Auditory"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Olfactory"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Tactile"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Taste"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Visual"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#PhysicalSensation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Wrath -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Wrath">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Anger"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Annoyance"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Exasperation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Indignation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Repulsion"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Tiredness"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Feeling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#interpretation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#interpretation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Evocation"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Amusement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Amusement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Anger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Anger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Wrath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Anguish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Anguish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Sadness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Annoyance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Annoyance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Wrath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Apprehension -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Apprehension">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Fear"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Astonishment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Astonishment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Surprise"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Auditory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Auditory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Way"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Bewilderment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Bewilderment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Surprise"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Cheerfulness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Cheerfulness"/>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Compassion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Compassion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Empathy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Confusion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Confusion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Curiousity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Curiousity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Execptedness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Disappointment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Disappointment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Sadness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Discomfort -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Discomfort"/>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Doubt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Doubt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Hesitation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Dread -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Dread">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Fear"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Embedded -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Embedded">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Involvement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Empathy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Empathy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Exasperation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Exasperation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Wrath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Exceeding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Exceeding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Hesitation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Expectant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Expectant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Execptedness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Fascination -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Fascination">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Happiness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Frustration -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Frustration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Sadness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Hilarity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Hilarity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Happiness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Hope -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Hope">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Execptedness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Horror -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Horror">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Fear"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#IamAttentive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#IamAttentive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Involvement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Impatience -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Impatience">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Execptedness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Indignation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Indignation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Wrath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Interrogation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Interrogation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Joy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Joy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Jubilation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Jubilation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Kidness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Kidness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Empathy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Laugh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Laugh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Happiness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Melancholy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Melancholy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Sadness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Olfactory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Olfactory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Way"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Pain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Pain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Sadness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Pity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Pity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Sadness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Relief -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Relief">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Happiness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Repulsion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Repulsion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Wrath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Scare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Scare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Fear"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Seizure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Seizure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Surprise"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Shame -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Shame">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Empathy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Smile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Smile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Happiness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Sorrow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Sorrow"/>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Stress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Stress"/>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Stupefaction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Stupefaction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Surprise"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Surprise -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Surprise"/>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Sympathy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Sympathy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Empathy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Tactile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Tactile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Way"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Taste -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Taste">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Way"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Tenderness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Tenderness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Empathy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Tiredness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Tiredness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Wrath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Upheaval -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Upheaval">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Hesitation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Vacuity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Vacuity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Vertigo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Vertigo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Hesitation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Visual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Visual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Way"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Worry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Worry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Hesitation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iAmTired -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iAmTired">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Involvement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iAnticipate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iAnticipate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Involvement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iDontLike -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iDontLike">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Dislike"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iDontReallyLike -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iDontReallyLike">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Dislike"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iHate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iHate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Dislike"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iHaveTroublesGettingInto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iHaveTroublesGettingInto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Involvement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iLike -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iLike">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Like"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iLove -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iLove">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Like"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iLoveLittle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iLoveLittle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Like"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iLoveModerately -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iLoveModerately"/>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iReallyLike -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iReallyLike"/>
+    
+
+
+    <!-- http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iUnhook -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iUnhook">
+        <rdf:type rdf:resource="http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Involvement"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
