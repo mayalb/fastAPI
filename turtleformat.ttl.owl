@@ -1,0 +1,694 @@
+@prefix : <http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version> .
+
+<http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#hasAnnotation
+:hasAnnotation rdf:type owl:ObjectProperty ;
+               rdfs:domain :Spectacle ;
+               rdfs:range :Annotation .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#hasDecor
+:hasDecor rdf:type owl:ObjectProperty ;
+          rdfs:domain :Annotation ;
+          rdfs:range :Decor .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#hasEmotion
+:hasEmotion rdf:type owl:ObjectProperty ;
+            rdfs:domain :Annotation ;
+            rdfs:range :Emotion .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#hasEvocation
+:hasEvocation rdf:type owl:ObjectProperty ;
+              rdfs:domain :Annotation ;
+              rdfs:range :Evocation .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#hasInterpretation
+:hasInterpretation rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Annotation ;
+                   rdfs:range :Interpretation .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#hasJudgement
+:hasJudgement rdf:type owl:ObjectProperty ;
+              rdfs:domain :Annotation ;
+              rdfs:range :Judgement .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#hasWayToFeel
+:hasWayToFeel rdf:type owl:ObjectProperty ;
+              rdfs:domain :Perception ;
+              rdfs:range :Way .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#TextComprehension
+:TextComprehension rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Comprehension ;
+                   rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#TextCriticalOpinion
+:TextCriticalOpinion rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :AestheticCriticalOpinion ;
+                     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#TextCulturalReference
+:TextCulturalReference rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :CulturalReference ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#TextInterpretation
+:TextInterpretation rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :interpretation ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#id
+:id rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Annotation ;
+    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#projectId
+:projectId rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Annotation ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#startTime
+:startTime rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :Annotation ;
+           rdfs:range owl:real .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#stopTime
+:stopTime rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Annotation ;
+          rdfs:range owl:real .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#userId
+:userId rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Annotation ;
+        rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#AestheticCriticalOpinion
+:AestheticCriticalOpinion rdf:type owl:Class ;
+                          rdfs:subClassOf :Judgement .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Agitation
+:Agitation rdf:type owl:Class ;
+           rdfs:subClassOf :PhysicalSensation .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Annotation
+:Annotation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Calm
+:Calm rdf:type owl:Class ;
+      rdfs:subClassOf :PhysicalSensation .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Comprehension
+:Comprehension rdf:type owl:Class ;
+               rdfs:subClassOf :Evocation .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#CulturalReference
+:CulturalReference rdf:type owl:Class ;
+                   rdfs:subClassOf :Evocation .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Decor
+:Decor rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Dislike
+:Dislike rdf:type owl:Class ;
+         rdfs:subClassOf :SubjectiveOpinion .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Embarassment
+:Embarassment rdf:type owl:Class ;
+              rdfs:subClassOf :PhysicalSensation ;
+              owl:disjointWith :Pleasure .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Emotion
+:Emotion rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Empathy
+:Empathy rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Class ;
+                               owl:oneOf ( :Compassion
+                                           :Kidness
+                                           :Shame
+                                           :Sympathy
+                                           :Tenderness
+                                         )
+                             ] ;
+         rdfs:subClassOf :Feeling .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Evocation
+:Evocation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Excitation
+:Excitation rdf:type owl:Class ;
+            rdfs:subClassOf :PhysicalSensation .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Execptedness
+:Execptedness rdf:type owl:Class ;
+              owl:equivalentClass [ rdf:type owl:Class ;
+                                    owl:oneOf ( :Curiousity
+                                                :Expectant
+                                                :Hope
+                                                :Impatience
+                                              )
+                                  ] ;
+              rdfs:subClassOf :Feeling .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Fear
+:Fear rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Class ;
+                            owl:oneOf ( :Apprehension
+                                        :Dread
+                                        :Horror
+                                        :Scare
+                                      )
+                          ] ;
+      rdfs:subClassOf :Feeling .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Feeling
+:Feeling rdf:type owl:Class ;
+         rdfs:subClassOf :Emotion .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Happiness
+:Happiness rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Class ;
+                                 owl:oneOf ( :Fascination
+                                             :Hilarity
+                                             :Laugh
+                                             :Relief
+                                             :Smile
+                                           )
+                               ] ;
+           rdfs:subClassOf :Feeling .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Hesitation
+:Hesitation rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Class ;
+                                  owl:oneOf ( :Doubt
+                                              :Exceeding
+                                              :Upheaval
+                                              :Vertigo
+                                              :Worry
+                                            )
+                                ] ;
+            rdfs:subClassOf :Feeling .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Interpretation
+:Interpretation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Involvement
+:Involvement rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Class ;
+                                   owl:oneOf ( :Embedded
+                                               :IamAttentive
+                                               :iAmTired
+                                               :iAnticipate
+                                               :iHaveTroublesGettingInto
+                                               :iUnhook
+                                             )
+                                 ] ;
+             rdfs:subClassOf :Emotion .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Judgement
+:Judgement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Like
+:Like rdf:type owl:Class ;
+      rdfs:subClassOf :SubjectiveOpinion .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Perception
+:Perception rdf:type owl:Class ;
+            rdfs:subClassOf :PhysicalSensation .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#PhysicalSensation
+:PhysicalSensation rdf:type owl:Class ;
+                   rdfs:subClassOf :Emotion .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Pleasure
+:Pleasure rdf:type owl:Class ;
+          rdfs:subClassOf :PhysicalSensation .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Sadness
+:Sadness rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Class ;
+                               owl:oneOf ( :Anguish
+                                           :Disappointment
+                                           :Frustration
+                                           :Melancholy
+                                           :Pain
+                                           :Pity
+                                         )
+                             ] ;
+         rdfs:subClassOf :Feeling .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Spectacle
+:Spectacle rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#SubjectiveOpinion
+:SubjectiveOpinion rdf:type owl:Class ;
+                   rdfs:subClassOf :Judgement .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Surprise
+:Surprise rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Class ;
+                                owl:oneOf ( :Astonishment
+                                            :Bewilderment
+                                            :Seizure
+                                            :Stupefaction
+                                          )
+                              ] ;
+          rdfs:subClassOf :Feeling .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Way
+:Way rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Class ;
+                           owl:oneOf ( :Auditory
+                                       :Olfactory
+                                       :Tactile
+                                       :Taste
+                                       :Visual
+                                     )
+                         ] ;
+     rdfs:subClassOf :PhysicalSensation .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Wrath
+:Wrath rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Class ;
+                             owl:oneOf ( :Anger
+                                         :Annoyance
+                                         :Exasperation
+                                         :Indignation
+                                         :Repulsion
+                                         :Tiredness
+                                       )
+                           ] ;
+       rdfs:subClassOf :Feeling .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#interpretation
+:interpretation rdf:type owl:Class ;
+                rdfs:subClassOf :Evocation .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Amusement
+:Amusement rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Anger
+:Anger rdf:type owl:NamedIndividual ,
+                :Wrath .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Anguish
+:Anguish rdf:type owl:NamedIndividual ,
+                  :Sadness .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Annoyance
+:Annoyance rdf:type owl:NamedIndividual ,
+                    :Wrath .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Apprehension
+:Apprehension rdf:type owl:NamedIndividual ,
+                       :Fear .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Astonishment
+:Astonishment rdf:type owl:NamedIndividual ,
+                       :Surprise .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Auditory
+:Auditory rdf:type owl:NamedIndividual ,
+                   :Way .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Bewilderment
+:Bewilderment rdf:type owl:NamedIndividual ,
+                       :Surprise .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Cheerfulness
+:Cheerfulness rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Compassion
+:Compassion rdf:type owl:NamedIndividual ,
+                     :Empathy .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Confusion
+:Confusion rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Curiousity
+:Curiousity rdf:type owl:NamedIndividual ,
+                     :Execptedness .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Disappointment
+:Disappointment rdf:type owl:NamedIndividual ,
+                         :Sadness .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Discomfort
+:Discomfort rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Doubt
+:Doubt rdf:type owl:NamedIndividual ,
+                :Hesitation .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Dread
+:Dread rdf:type owl:NamedIndividual ,
+                :Fear .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Embedded
+:Embedded rdf:type owl:NamedIndividual ,
+                   :Involvement .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Empathy
+:Empathy rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Exasperation
+:Exasperation rdf:type owl:NamedIndividual ,
+                       :Wrath .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Exceeding
+:Exceeding rdf:type owl:NamedIndividual ,
+                    :Hesitation .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Expectant
+:Expectant rdf:type owl:NamedIndividual ,
+                    :Execptedness .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Fascination
+:Fascination rdf:type owl:NamedIndividual ,
+                      :Happiness .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Frustration
+:Frustration rdf:type owl:NamedIndividual ,
+                      :Sadness .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Hilarity
+:Hilarity rdf:type owl:NamedIndividual ,
+                   :Happiness .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Hope
+:Hope rdf:type owl:NamedIndividual ,
+               :Execptedness .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Horror
+:Horror rdf:type owl:NamedIndividual ,
+                 :Fear .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#IamAttentive
+:IamAttentive rdf:type owl:NamedIndividual ,
+                       :Involvement .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Impatience
+:Impatience rdf:type owl:NamedIndividual ,
+                     :Execptedness .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Indignation
+:Indignation rdf:type owl:NamedIndividual ,
+                      :Wrath .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Interrogation
+:Interrogation rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Joy
+:Joy rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Jubilation
+:Jubilation rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Kidness
+:Kidness rdf:type owl:NamedIndividual ,
+                  :Empathy .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Laugh
+:Laugh rdf:type owl:NamedIndividual ,
+                :Happiness .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Melancholy
+:Melancholy rdf:type owl:NamedIndividual ,
+                     :Sadness .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Olfactory
+:Olfactory rdf:type owl:NamedIndividual ,
+                    :Way .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Pain
+:Pain rdf:type owl:NamedIndividual ,
+               :Sadness .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Pity
+:Pity rdf:type owl:NamedIndividual ,
+               :Sadness .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Relief
+:Relief rdf:type owl:NamedIndividual ,
+                 :Happiness .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Repulsion
+:Repulsion rdf:type owl:NamedIndividual ,
+                    :Wrath .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Scare
+:Scare rdf:type owl:NamedIndividual ,
+                :Fear .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Seizure
+:Seizure rdf:type owl:NamedIndividual ,
+                  :Surprise .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Shame
+:Shame rdf:type owl:NamedIndividual ,
+                :Empathy .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Smile
+:Smile rdf:type owl:NamedIndividual ,
+                :Happiness .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Sorrow
+:Sorrow rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Stress
+:Stress rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Stupefaction
+:Stupefaction rdf:type owl:NamedIndividual ,
+                       :Surprise .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Surprise
+:Surprise rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Sympathy
+:Sympathy rdf:type owl:NamedIndividual ,
+                   :Empathy .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Tactile
+:Tactile rdf:type owl:NamedIndividual ,
+                  :Way .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Taste
+:Taste rdf:type owl:NamedIndividual ,
+                :Way .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Tenderness
+:Tenderness rdf:type owl:NamedIndividual ,
+                     :Empathy .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Tiredness
+:Tiredness rdf:type owl:NamedIndividual ,
+                    :Wrath .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Upheaval
+:Upheaval rdf:type owl:NamedIndividual ,
+                   :Hesitation .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Vacuity
+:Vacuity rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Vertigo
+:Vertigo rdf:type owl:NamedIndividual ,
+                  :Hesitation .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Visual
+:Visual rdf:type owl:NamedIndividual ,
+                 :Way .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#Worry
+:Worry rdf:type owl:NamedIndividual ,
+                :Hesitation .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iAmTired
+:iAmTired rdf:type owl:NamedIndividual ,
+                   :Involvement .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iAnticipate
+:iAnticipate rdf:type owl:NamedIndividual ,
+                      :Involvement .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iDontLike
+:iDontLike rdf:type owl:NamedIndividual ,
+                    :Dislike .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iDontReallyLike
+:iDontReallyLike rdf:type owl:NamedIndividual ,
+                          :Dislike .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iHate
+:iHate rdf:type owl:NamedIndividual ,
+                :Dislike .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iHaveTroublesGettingInto
+:iHaveTroublesGettingInto rdf:type owl:NamedIndividual ,
+                                   :Involvement .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iLike
+:iLike rdf:type owl:NamedIndividual ,
+                :Like .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iLove
+:iLove rdf:type owl:NamedIndividual ,
+                :Like .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iLoveLittle
+:iLoveLittle rdf:type owl:NamedIndividual ,
+                      :Like .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iLoveModerately
+:iLoveModerately rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iReallyLike
+:iReallyLike rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/larbim/ontologies/2022/0/Emotion-initial-version#iUnhook
+:iUnhook rdf:type owl:NamedIndividual ,
+                  :Involvement .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
